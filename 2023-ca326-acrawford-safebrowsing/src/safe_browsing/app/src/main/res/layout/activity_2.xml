@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity2"
+    >
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/heading"
+        android:text="Safe Browsing"
+        android:gravity="center"
+        android:textSize="35sp"
+        android:layout_marginTop="50dp"
+        android:layout_marginHorizontal="50dp"
+        android:textStyle="bold"
+        android:textColor="#232F34"
+        />
+    <TextView
+        android:id="@+id/ip_display"
+        android:layout_below="@id/heading"
+        android:textColor="#4a6572"
+        android:layout_marginVertical="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Proxy IP: "
+        android:textSize="20sp"
+        android:gravity="center_horizontal"/>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/blacklist_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="65dp"
+        android:layout_below="@id/ip_display"
+        android:layout_centerHorizontal="true"
+
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="15dp"
+        android:backgroundTint="#344955"
+        android:minWidth="320dp"
+        android:text="View System Wide blacklist"
+        android:textSize="17sp" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/devices_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="65dp"
+        android:layout_below="@id/blacklist_btn"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="20dp"
+        android:backgroundTint="#344955"
+        android:minWidth="320dp"
+        android:text="User Settings"
+        android:textSize="17sp" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/user_logs_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="65dp"
+        android:layout_below="@id/devices_btn"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="20dp"
+        android:backgroundTint="#344955"
+        android:minWidth="320dp"
+        android:text="view User logs"
+        android:textSize="17sp" />
+    <TextView
+        android:textColor="#333131"
+        android:text="Total queries logged this week:"
+        android:gravity="center"
+        android:id="@+id/all_site_visited"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/user_logs_btn"
+        android:layout_width="wrap_content"
+        android:minWidth="320dp"
+        android:layout_height="50dp"
+        android:background="@drawable/rounded_corner"
+        android:textSize="17sp"
+        android:layout_marginTop="40dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginHorizontal="30dp"
+        />
+
+    <TextView
+        android:textColor="#333131"
+        android:text="Total queries blocked this week:"
+        android:gravity="center"
+        android:id="@+id/num_blocked_sites"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_below="@id/all_site_visited"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/rounded_corner"
+        android:minWidth="320dp"
+        android:textSize="17sp"
+        />
+
+    <TextView
+        android:textColor="#333131"
+        android:text="Percentage of queries blocked:"
+        android:gravity="center"
+        android:id="@+id/percentage_blocked"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_below="@id/num_blocked_sites"
+        android:layout_centerHorizontal="true"
+        android:layout_marginHorizontal="30dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/rounded_corner"
+        android:minWidth="320dp"
+        android:textSize="17sp" />
+</RelativeLayout>

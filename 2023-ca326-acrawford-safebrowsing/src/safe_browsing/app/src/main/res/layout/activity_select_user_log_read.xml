@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingLeft="5dp"
+    android:paddingRight="5dp"
+    tools:context=".Select_User_Log_Read">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Users"
+        android:textStyle="bold"
+        android:textAlignment="center"
+        android:textColor="#232F34"
+        android:layout_marginBottom="10dp"
+        android:textSize="30sp" />
+    <View style="@style/Divider"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:text="Select a User to view their logs"
+        android:textSize="20sp"/>
+    <ListView
+        android:id="@+id/connected"
+        android:layout_width="match_parent"
+        android:layout_height="10000dp"
+        android:layout_weight="1"
+        android:layout_margin="10dp"
+        android:background="#40D3D3D3">
+    </ListView>
+
+</LinearLayout>

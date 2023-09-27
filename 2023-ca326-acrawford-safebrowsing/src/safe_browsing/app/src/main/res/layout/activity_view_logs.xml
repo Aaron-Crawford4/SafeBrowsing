@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingLeft="5dp"
+    android:paddingRight="5dp"
+    tools:context=".view_logs">
+
+    <TextView
+        android:id="@+id/page_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="User Logs"
+        android:textStyle="bold"
+        android:textAlignment="center"
+        android:textColor="#232F34"
+        android:layout_marginBottom="10dp"
+        android:textSize="30sp"/>
+    <View style="@style/Divider"/>
+    <CheckBox
+        android:id="@+id/weekly_check"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="View Weekly Logs"/>
+    <CheckBox
+        android:id="@+id/daily_check"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="View Daily Logs"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Times Used | Website"
+        android:textSize="20sp"
+        android:gravity="center_horizontal"/>
+    <ListView
+        android:id="@+id/log_list_view"
+        android:layout_width="match_parent"
+        android:layout_height="10000dp"
+        android:layout_margin="10dp"
+        android:layout_weight="1"
+        android:background="#40D3D3D3">
+    </ListView>
+</LinearLayout>
